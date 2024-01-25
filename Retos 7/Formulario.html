@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de HTML con Formularios</title>
+</head>
+<body>
+    <center>
+        <h1>Formularios en HTML</h1>
+    </center>
+    <form action="procesar_formulario.php" method="post">
+        <!-- Main Info -->
+        <h2>Datos Personales</h2>
+        <label for="name">Nombre:</label>
+        <input type="text" name="personal" id="name" />
+        <br />
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" name="personal" id="email" required autocomplete="email" />
+
+        <!-- Personal Info -->
+        <h2>Género</h2>
+        <input type="radio" value="Uno" name="personalOption" id="uno" />
+        <label for="uno">Masculino</label>
+        <br />
+        <input type="radio" value="Dos" name="personalOption" id="dos" />
+        <label for="dos">Femenino</label>
+        <br />
+        <input type="radio" value="Tres" name="personalOption" id="tres" />
+        <label for="tres">Otro</label>
+
+        <!-- Preferences -->
+        <h2>Preferencias</h2>
+        <input type="checkbox" value="One" name="prefer-list" id="one" />
+        <label for="one">Música</label>
+        <br />
+        <input type="checkbox" value="Two" name="prefer-list" id="two" />
+        <label for="two">Deportes</label>
+        <br />
+        <input type="checkbox" value="Three" name="prefer-list" id="three" />
+        <label for="three">Lectura</label>
+
+        <!-- Comments -->
+        <h2>Comentarios</h2>
+        <label for="message">Comentarios:</label>
+        <textarea name="message" id="message" cols="70" rows="10"></textarea>
+        <br />
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
